@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v12
+# v13
 
 CACHE:
 vendor/aptoma/alf/alf.css
@@ -31,6 +31,9 @@ http://lisa.aftenposten.no/aftenposten_pluss/fonts/ClanOT/ClanOT-Ultra.otf
 http://lisa.aftenposten.no/aftenposten_pluss/fonts/PublicoHeadline/PublicoHeadline-Bold.otf
 http://lisa.aftenposten.no/aftenposten_pluss/fonts/PublicoHeadline/PublicoHeadline-Medium.otf
 http://lisa.aftenposten.no/aftenposten_pluss/fonts/PublicoHeadline/PublicoHeadline-Light.otf
+http://lisa.aftenposten.no/aftenposten_pluss/fonts/PublicoHeadline/PublicoHeadline-BoldItalic.otf
+http://lisa.aftenposten.no/aftenposten_pluss/fonts/PublicoHeadline/PublicoHeadline-LightItalic.otf
+http://lisa.aftenposten.no/aftenposten_pluss/fonts/PublicoHeadline/PublicoHeadline-MediumItalic.otf
 
 NETWORK:
 *

@@ -39,7 +39,33 @@ define('js/widgets/phonebanner', ['alf'], function(Alf){
             var container = this.container;
             container.$el.empty();
 
-            var url = "http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Default-Top-5;misc=" + new Date().getTime();
+            var bannerArr = [
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Bil-Top-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Bil-Other1-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Default-Top-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Default-Other1-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Familie-Top-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Familie-Other1-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Kultur-Top-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Kultur-Other1-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Nyheter-Top-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Nyheter-Other1-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Osloby-Top-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Osloby-Netboard1-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Reise-Top-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Reise-Other1-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Sport-Top-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Sport-Other1-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Okonomi-Top-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Okonomi-Other1-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Jobb-Top-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Jobb-Other1-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Bolig-Top-5;misc=',
+                'http://a.adtech.de/addyn/3.0/995.1/0/0/-1/ADTECH;loc=100;grp=[group];alias=MobilAPpluss_Bolig-Other1-5;misc='
+            ];
+            var randomBanner = Math.floor(Math.random()*bannerArr.length);
+            var url = bannerArr[randomBanner] + new Date().getTime();
+
             var phoneadwrapper = document.createElement('div');
             phoneadwrapper.className = 'phone-ad-wrap';
             var iframe = document.createElement('iframe');

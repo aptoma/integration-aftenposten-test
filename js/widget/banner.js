@@ -2,6 +2,8 @@ define('js/widgets/banner', ['alf'], function(Alf){
     "use strict";
     var $ = Alf.dom;
 
+    var trafficScript = 'http://www.aftenposten.no/resources/js/mno/utils/trafficfund_fif.js';
+
     return {
         selector: '.banner-fullwidth',
 
@@ -18,8 +20,18 @@ define('js/widgets/banner', ['alf'], function(Alf){
 
             var iframe = document.createElement('iframe');
             iframe.className = 'ad-iframe';
+            iframe.seamless = 'seamless';
             iframe.scrolling='no';
-            var html = '<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0"><scr'+'ipt language="javascript1.1" src="' + url + '"></scri'+'pt></body>';
+            var html = '<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0">'+
+                '<scr'+'ipt  src="' +
+                    url +
+                '"></scri'+'pt>'+
+                '<scr'+'ipt >;window.trafficfund_domain="aftenposten.no";</scri'+'pt>'+
+                '<scr'+'ipt  src="' +
+                    trafficScript +
+                '"></scri'+'pt>'+
+                '</body>';
+
             iframe.src = 'data:text/html;charset=utf-8,' + encodeURI(html);
             container.$el.append(iframe);
 
@@ -31,6 +43,7 @@ define('js/widgets/banner', ['alf'], function(Alf){
 define('js/widgets/phonebanner', ['alf'], function(Alf){
     "use strict";
     var $ = Alf.dom;
+    var trafficScript = 'http://www.aftenposten.no/resources/js/mno/utils/trafficfund_fif.js';
 
     return {
         selector: '.phone-banner',
@@ -72,7 +85,14 @@ define('js/widgets/phonebanner', ['alf'], function(Alf){
             iframe.className = 'ad-iframe';
             iframe.scrolling='no';
             var html = '<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0">'
-                + '<scr'+'ipt language="javascript1.1" src="' + url + '"></scri'+'pt></body>';
+                + '<scr'+'ipt  src="' +
+                url +
+                '"></scri'+'pt>'+
+                '<scr'+'ipt >;window.trafficfund_domain="aftenposten.no";</scri'+'pt>'+
+                '<scr'+'ipt  src="' +
+                trafficScript +
+                '"></scri'+'pt>'+
+                '</body>';
             iframe.src = 'data:text/html;charset=utf-8,' + encodeURI(html);
             phoneadwrapper.appendChild(iframe);
             container.$el.append(phoneadwrapper);

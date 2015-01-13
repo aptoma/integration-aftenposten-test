@@ -177,14 +177,8 @@ require(['main', 'pages'], function(app, pages){
             url = "http://"+env+"/drmobile.json?"+
                 "articleId="+articleId+
                 "&formatName="+formatName;
-        }else{
-            var publicationName = 'ap_pub_5';
-            url = 'http://rai-dev.aptoma.no:9000/drmobile.json?formatName=' + formatName
-                + '&publicationName=' + publicationName
-                + '&limit=20&order=updated+desc';
-
-            url = "http://aftenposten-staging.drlib.aptoma.no/drmobile.json?articleId=common408675&formatName=ipad_landscape";
         }
+        
 
         //we need it because iphone is 100% width and for desktop preview
         //it desn't make sense

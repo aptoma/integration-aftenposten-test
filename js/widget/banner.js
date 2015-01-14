@@ -84,7 +84,7 @@ define('js/widgets/phonebanner', ['alf'], function(Alf){
             var iframe = document.createElement('iframe');
             iframe.className = 'ad-iframe';
             iframe.scrolling='no';
-            var html = '<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0">'
+            var html = '<head><style>img {width: 320px;}</style></head><body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0">'
                 + '<scr'+'ipt  src="' +
                 url +
                 '"></scri'+'pt>'+

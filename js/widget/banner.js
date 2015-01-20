@@ -135,9 +135,8 @@ define('js/widgets/phonebanner', ['alf'], function (Alf) {
                     'http://a.adtech.de/addyn/3.0/1582.1/0/0/-1/ADTECH;loc=100;grp=%5Bgroup%5D;alias=SB_AftenpostenPluss_Mobile:Other:TopBoard;misc=',
                     'http://a.adtech.de/addyn/3.0/1582.1/0/0/-1/ADTECH;loc=100;grp=%5Bgroup%5D;alias=SB_AftenpostenPluss_Mobile:Other:NetBoard1;misc='
                 ]
-
-
             };
+
             var sectionArray = banners[sectionName] || banners["other"];
 
             var randomBanner = Math.floor(Math.random() * sectionArray.length);
@@ -148,7 +147,7 @@ define('js/widgets/phonebanner', ['alf'], function (Alf) {
             var iframe = document.createElement('iframe');
             iframe.className = 'ad-iframe';
             iframe.scrolling = 'no';
-            var html = '<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0">'
+            var html = '<head><style>img {max-width : 100%}</style></head><body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0">'
                 + '<scr' + 'ipt  src="' +
                 url +
                 '"></scri' + 'pt>' +

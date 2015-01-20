@@ -19,7 +19,7 @@ define('js/widgets/banner', ['alf'], function(Alf){
                     'http://adserver.adtech.de/addyn|3.0|1582.1|5509585|0|1744|ADTECH;cookie=info;alias=SB_AftenpostenPluss_Tablet:Nyheter:TopBoard;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc=',
                     'http://adserver.adtech.de/addyn|3.0|1582.1|5509596|0|1744|ADTECH;cookie=info;alias=SB_AftenpostenPluss_Tablet:Nyheter:SuperBoard1;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='
                 ],
-                "okonomi": [
+                "økonomi": [
                     'http://adserver.adtech.de/addyn|3.0|1582.1|5509586|0|1744|ADTECH;cookie=info;alias=SB_AftenpostenPluss_Tablet:Okonomi:SuperBoard1;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc=',
                     'http://adserver.adtech.de/addyn|3.0|1582.1|5509598|0|1744|ADTECH;cookie=info;alias=SB_AftenpostenPluss_Tablet:Okonomi:TopBoard;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='
                 ],
@@ -99,7 +99,7 @@ define('js/widgets/phonebanner', ['alf'], function (Alf) {
                     'http://a.adtech.de/addyn/3.0/1582.1/0/0/-1/ADTECH;loc=100;grp=%5Bgroup%5D;alias=SB_AftenpostenPluss_Mobile:Kultur:NetBoard1;misc=',
                     'http://a.adtech.de/addyn/3.0/1582.1/0/0/-1/ADTECH;loc=100;grp=%5Bgroup%5D;alias=SB_AftenpostenPluss_Mobile:Kultur:TopBoard;misc='
                 ],
-                "okonomi": [
+                "økonomi": [
                     'http://a.adtech.de/addyn/3.0/1582.1/0/0/-1/ADTECH;loc=100;grp=%5Bgroup%5D;alias=SB_AftenpostenPluss_Mobile:Okonomi:NetBoard1;misc=',
                     'http://a.adtech.de/addyn/3.0/1582.1/0/0/-1/ADTECH;loc=100;grp=%5Bgroup%5D;alias=SB_AftenpostenPluss_Mobile:Okonomi:TopBoard;misc='
                 ],
@@ -107,7 +107,6 @@ define('js/widgets/phonebanner', ['alf'], function (Alf) {
                     'http://a.adtech.de/addyn/3.0/1582.1/0/0/-1/ADTECH;loc=100;grp=%5Bgroup%5D;alias=SB_AftenpostenPluss_Mobile:Osloby:TopBoard;misc=',
                     'http://a.adtech.de/addyn/3.0/1582.1/0/0/-1/ADTECH;loc=100;grp=%5Bgroup%5D;alias=SB_AftenpostenPluss_Mobile:Osloby:NetBoard1;misc='
                 ],
-
                 "bil": [
                     'http://a.adtech.de/addyn/3.0/1582.1/0/0/-1/ADTECH;loc=100;grp=%5Bgroup%5D;alias=SB_AftenpostenPluss_Mobile:Bil:TopBoard;misc=',
                     'http://a.adtech.de/addyn/3.0/1582.1/0/0/-1/ADTECH;loc=100;grp=%5Bgroup%5D;alias=SB_AftenpostenPluss_Mobile:Bil:NetBoard1;misc='

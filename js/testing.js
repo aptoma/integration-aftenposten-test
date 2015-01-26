@@ -168,17 +168,25 @@ require(['main', 'pages'], function(app, pages){
         var env = getQueryVariable('env') ;
         var formatName = getQueryVariable('format') || 'iphone';
         var articleId = getQueryVariable('id') || 'ap6743515';
+        var apikey = getQueryVariable('apikey') || '';
         state.page = getQueryVariable('page') || 0;
         var url = getQueryVariable('url');
 
+        var isStaging = env && env.indexOf('staging') > -1;
         if(url){
             //use url
-        }else if(env){
+        }else if(isStaging){
             url = "http://"+env+"/drmobile.json?"+
                 "articleId="+articleId+
                 "&formatName="+formatName;
+        } else if(env) {
+            url = "https://"+env+"/aftenposten.json?" +
+                "articleId=" + articleId +
+                "&apikey=" + apikey +
+                "&formatName="+ formatName;
         }
-        
+
+
 
         //we need it because iphone is 100% width and for desktop preview
         //it desn't make sense

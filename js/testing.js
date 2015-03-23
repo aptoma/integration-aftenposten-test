@@ -171,7 +171,6 @@ require(['main', 'pages'], function(app, pages){
         var apikey = getQueryVariable('apikey') || '';
         state.page = getQueryVariable('page') || 0;
         var url = getQueryVariable('url');
-
         var isStaging = env && env.indexOf('staging') > -1;
         if(url){
             //use url

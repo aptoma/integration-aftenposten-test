@@ -43,6 +43,10 @@ define('js/widgets/banner', ['alf'], function(Alf){
                     'http://adserver.adtech.de/addyn|3.0|1582.1|5509595|0|1744|ADTECH;cookie=info;alias=SB_AftenpostenPluss_Tablet:Kultur:TopBoard;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc=',
                     'http://adserver.adtech.de/addyn|3.0|1582.1|5509601|0|1744|ADTECH;cookie=info;alias=SB_AftenpostenPluss_Tablet:Kultur:SuperBoard1;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='
                 ],
+                "bolig": [
+                    'http://adserver.adtech.de/addyn|3.0|1582.1|5616303|0|1744|ADTECH;cookie=info;alias=SB_AftenpostenPluss_Tablet:Bolig:TopBoard;loc=100;target=_blank;grp=[group];misc=',
+                    'http://adserver.adtech.de/addyn|3.0|1582.1|5616302|0|1744|ADTECH;cookie=info;alias=SB_AftenpostenPluss_Tablet:Bolig:SuperBoard1;loc=100;target=_blank;grp=[group];misc='
+                ],
                 "other": [
                     'http://adserver.adtech.de/addyn|3.0|1582.1|5509590|0|1744|ADTECH;cookie=info;alias=SB_AftenpostenPluss_Tablet:Other:TopBoard;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc=',
                     'http://adserver.adtech.de/addyn|3.0|1582.1|5509600|0|1744|ADTECH;cookie=info;alias=SB_AftenpostenPluss_Tablet:Other:SuperBoard1;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='

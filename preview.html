@@ -1,0 +1,55 @@
+<html>
+<head>
+  <style>
+    label {
+      float: left;
+      width: 100%;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Preview article</h1>
+  <form method="GET" action="test.html">
+
+    <!-- env -->
+    <p>
+      <label for="ENV">Enviroment:</label>
+      <select id="ENV" name="env">
+        <option value="snd.drlib.aptoma.no" selected>snd.drlib.aptoma.no</option>
+        <option value="aftenposten-staging.drlib.aptoma.no">aftenposten-staging.drlib.aptoma.no</option>
+      </select>
+    </p>
+
+    <!-- id -->
+    <p>
+      <label for="article-id">Article id:</label>
+      <input id="article-id" name="id" value="ap7952068" onfocus="this.value == this.defaultValue ? this.value = '' : ''" required="required">
+    </p>
+
+    <!-- format -->
+    <p>
+      <label for="format-name">Format name:</label>
+      <select id="format-name" name="format">
+        <option value="ipad_landscape">iPad</option>
+        <option value="iphone" selected>iPhone</option>
+      </select>
+    </p>
+
+    <!-- apikey -->
+    <p>
+      <label for="api-key">API key</label>
+      <input type="text" name="apikey" id="api-key" required="required">
+    </p>
+
+    <!-- page -->
+    <p>
+      <label for="page">Page number</label>
+      <input type="number" name="page" id="page" value="0">
+    </p>
+
+    <input type="submit" value="show article">
+
+  </form>
+</body>
+</html>

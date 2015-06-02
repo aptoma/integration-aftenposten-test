@@ -13,6 +13,10 @@ define('js/widgets/banner', ['alf'], function(Alf){
 
             container.$el.empty();
 
+            if(sectionName === 'dødsfall') {
+                done();
+                return;
+            }
 
             var banners = {
                 "nyheter": [
@@ -93,6 +97,11 @@ define('js/widgets/phonebanner', ['alf'], function (Alf) {
             var sectionName = container.$el.find(":first-child").attr("data-section");
 
             container.$el.empty();
+            
+            if(sectionName === 'dødsfall') {
+                done();
+                return;
+            }
 
             var banners = {
                 "nyheter": [

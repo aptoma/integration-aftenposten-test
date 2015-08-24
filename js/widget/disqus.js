@@ -1,41 +1,41 @@
-define('js/widgets/disqus', ['alf'], function(Alf){
-    "use strict";
-    var $ = Alf.dom;
+"use strict";
 
-    return {
-        selector: '.lp-widget-disqus',
-        //selector: 'div',
+var Alf = require('alf');
+var $ = Alf.dom;
 
-        run: function(done){
+module.exports = {
+    selector: '.lp-widget-disqus',
+    //selector: 'div',
 
-            var $this = this.$el;
-            var shortname = $this.attr('shortname');
-            var query = $this.attr('data-query');
-            //$this.text('Kommentarer');
+    run: function(done){
 
-            var treshhold = 100;
-            var skip = false;
+        var $this = this.$el;
+        var shortname = $this.attr('shortname');
+        var query = $this.attr('data-query');
+        //$this.text('Kommentarer');
 
-            function openComments(){
-                if(skip) {
-                    console.log('block it');
-                    return;
-                }
+        var treshhold = 100;
+        var skip = false;
 
-                //console.log('Comments for: ' + shortname + ' ' + query);
-                var url = 'http://lisa.aftenposten.no/aftenposten_pluss/stage/integration/disqus.html?shortname='+shortname+'&identifier='+query;
-                window.location.href = url;
-
-                skip = true;
-                setTimeout(function(){
-                    skip = false;
-                }, treshhold);
-
+        function openComments(){
+            if(skip) {
+                console.log('block it');
+                return;
             }
 
-            $this.tap(openComments);
+            //console.log('Comments for: ' + shortname + ' ' + query);
+            var url = 'http://lisa.aftenposten.no/aftenposten_pluss/stage/integration/disqus.html?shortname='+shortname+'&identifier='+query;
+            window.location.href = url;
 
-            done();
+            skip = true;
+            setTimeout(function(){
+                skip = false;
+            }, treshhold);
+
         }
-    };
-});
+
+        $this.tap(openComments);
+
+        done();
+    }
+};

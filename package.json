@@ -1,0 +1,28 @@
+{
+  "name": "integration-aftenposten-test",
+  "version": "1.0.0",
+  "description": "Aftenposten+ integration",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify js/main.js -o dist/app.js -s app",
+    "dist": "cp ./node_modules/alf/alf.css dist/alf.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivyengine/integration-aftenposten-test.git"
+  },
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/ivyengine/integration-aftenposten-test/issues"
+  },
+  "homepage": "https://github.com/ivyengine/integration-aftenposten-test#readme",
+  "devDependencies": {
+    "alf": "^2.0.0",
+    "browserify": "^11.0.1"
+  },
+  "browser": {
+    "alf": "alf/alf-deps.js"
+  }
+}

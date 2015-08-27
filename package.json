@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/ivyengine/integration-aftenposten-test#readme",
   "devDependencies": {
-    "alf": "^2.0.0",
     "browserify": "^11.0.1"
   },
   "browser": {
     "alf": "alf/alf-deps.js"
+  },
+  "dependencies": {
+    "alf": "^2.0.0"
   }
 }

@@ -4,6 +4,8 @@ var Alf = require('alf');
 var disqus = require('./widget/disqus');
 var banner = require('./widget/banner');
 var phonebanner = require('./widget/phonebanner');
+var fullpage = require('./widget/fullpage');
+var phonefullpage = require('./widget/phonefullpage');
 
 var $ = Alf.dom;
 var _ = Alf._;
@@ -12,7 +14,7 @@ $('.alf-layer-fullscreen').on('singleTap touchstart tap click touchend', 'a', fu
     ev.stopImmediatePropagation();
 });
 
-var widgets = [disqus, banner, phonebanner];
+var widgets = [disqus, banner, phonebanner, fullpage, phonefullpage];
 
 var app = {
     initialize: function () {

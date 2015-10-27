@@ -3,3 +3,4 @@ dist/
 .idea
 *.iml
 integration-aftenposten.zip
+node_modules
